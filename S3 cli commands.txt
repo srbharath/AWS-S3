@@ -1,0 +1,42 @@
+#To list the buckects 
+ aws s3 ls
+
+#To create a buckect 
+ aws s3api create-bucket --buckect 12345qwick --region us-east-1
+ aws s3api create-bucket --bucket 12345qwick --region us-east-1
+
+#To create a file 
+ touch sample1.txt
+
+#To write a content for this file 
+ cat >> sample1.txt --> Enter --> Write the file content --> Enter --> ctrl+c(to exit)
+
+#To display the file content
+ cat sample1.txt
+
+ cat >> sample1.txt
+
+#To copy the file from local to s3 buckect
+ aws s3 cp sample1.txt s3://1234qwick
+
+ touch test.txt
+ cat >> test.txt
+ cat test.txt
+
+#To display the s3 buckect objects
+ aws s3 ls s3://1234qwick
+
+ aws s3 cp test.txt s3://12345qwick
+ aws s3 ls s3://12345qwick
+ touch test.txt
+ touch test1.txt
+ ls
+ cat >> test1.txt
+ cat test1.txt
+ aws s3 cp test1.txt s3://12345qwick
+ aws s3 ls s3://12345qwick
+
+#To copy the object from one buckect to another buckect
+ aws s3 cp s3://12345qwick/test1.txt s3://1234qwick
+ 
+ 
